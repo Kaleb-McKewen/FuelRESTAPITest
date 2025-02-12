@@ -10,6 +10,15 @@ let db = {
             });
           });
     },
+    getAllFuel: async() =>{
+        return new Promise((resolve, reject) => {
+            const sql = 'SELECT * FROM fuelprice';
+            connection.all(sql, (err, rows) => {
+              if (err) reject(err);
+              resolve(rows);
+            });
+          });
+    },
 }
 
 module.exports = db;
