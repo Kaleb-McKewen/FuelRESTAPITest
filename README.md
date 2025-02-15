@@ -5,8 +5,8 @@ A sample .env is included. Default is port 3000 and db file located in ./db/ dir
 # Installation
 Use npm install
 
-# Run
-npm run
+# Start
+npm start
 
 ## Endpoints:
 
